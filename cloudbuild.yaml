@@ -11,7 +11,7 @@ steps:
   - name: 'gcr.io/cloud-builders/kubectl'
     args: ['set', 'image', 'deployment/symfony-test', 'containers-test-symfony-sha256=gcr.io/glass-world-245718/containers-test-symfony:latest']
     env:
-        - 'CLOUDSDK_COMPUTE_REGION=northamerica-northeast1-a'
+        - 'CLOUDSDK_COMPUTE_ZONE=northamerica-northeast1-a'
         - 'CLOUDSDK_CONTAINER_CLUSTER=test-cluster'
 tags: ['mtgbracket', 'api']
 images: ['gcr.io/glass-world-245718/containers-test-symfony']
