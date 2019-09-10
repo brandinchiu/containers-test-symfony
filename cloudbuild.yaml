@@ -3,7 +3,7 @@ steps:
     args: ['install']
     
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'containers-test-symfony', '.']
+    args: ['build', '-t', 'gcr.io/glass-world-245718/containers-test-symfony', '.']
     
 tags: ['mtgbracket', 'api']
 images: ['gcr.io/glass-world-245718/containers-test-symfony']
